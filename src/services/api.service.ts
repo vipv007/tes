@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ApiService {
-    private apiUrl = 'https://celescontainerwebapp-gbb0eccffyfkg4hc.westus3-01.azurewebsites.net/items';
+    private apiUrl = 'celescontainerwebapp-staging-b5g9ehgkhyb0dpe9.westus3-01.azurewebsites.net/items';
 
 
   constructor(private http: HttpClient) {}
