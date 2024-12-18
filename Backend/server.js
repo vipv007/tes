@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection String (replace with your Azure Cosmos DB URI)
-const cosmosDbKey = process.env.AZURE_COSMOS_CONNECTIONSTRING;  // Ensure you set the correct environment variable for your connection string
+const cosmosDbKey = 'mongodb://celescontainerwebapp-server:Cd8bsmtPGb944jUTWSF6f03i9ZyuoYpKSNd14ZX7rrL5hM9yzcdZF6WidOZABiakigan29ihvSGtACDbgtLJdg==@celescontainerwebapp-server.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@celescontainerwebapp-server@';  // Ensure you set the correct environment variable for your connection string
 
 // Determine the Mongo URI for connecting to Cosmos DB
 const mongoURI = cosmosDbKey || 'mongodb://127.0.0.1:27017/';  // Use local DB as a fallback
